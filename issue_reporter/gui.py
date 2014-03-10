@@ -3,7 +3,7 @@ from . import issue_reporter
 from wx_utils import forms as wx_forms
 from gui_builder import fields, forms
 
-class IssueReportDialog(wx_forms.AutoSizedDialog):
+class IssueReporterDialog(wx_forms.AutoSizedDialog):
  email = fields.Text(label=__("Your &Email Address"), size=(600, 200))
  summary = fields.Text(label=__("Summary"), size=(800, 200))
  frequency = fields.RadioButtonGroup(label=__("How frequently does the Issue occur?"), choices=[__("Rarely"), __("Sometimes"), __("Frequently"), __("Always")])
