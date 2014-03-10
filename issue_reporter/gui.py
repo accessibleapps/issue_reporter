@@ -13,4 +13,4 @@ class IssueReporterDialog(wx_forms.AutoSizedDialog):
  buttons = fields.ButtonSizer(ok=True, cancel=True)
 
  def get_report(self):
-  return issue_reporter.Report(email=self.email.get_value(), summary=self.summary.get_value, frequency=self.frequency.get_value(), steps=self.steps.get_value(), expected_results=self.expected_results.get_value(), actual_results=self.actual_results.get_value())
+  return issue_reporter.Report(email=self.email.get_value(), summary=self.summary.get_value(), frequency=self.frequency.get_value(), steps=self.steps.get_value(), expected_results=self.expected.get_value(), actual_results=self.actual.get_value())
