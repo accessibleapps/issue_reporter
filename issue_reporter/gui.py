@@ -4,12 +4,12 @@ from wx_utils import forms as wx_forms
 from gui_builder import fields, forms
 
 class IssueReporterDialog(wx_forms.AutoSizedDialog):
- email = fields.Text(label=__("Your &Email Address"), size=(600, 200))
- summary = fields.Text(label=__("Summary"), size=(800, 200))
+ email = fields.Text(label=__("Your &Email Address"), size=(200, 20))
+ summary = fields.Text(label=__("Summary"), size=(400, 20))
  frequency = fields.RadioButtonGroup(label=__("How frequently does the Issue occur?"), choices=[__("Rarely"), __("Sometimes"), __("Frequently"), __("Always")])
- steps = fields.Text(label=__("Steps to Reproduce"), multiline=True, size=(600, 600))
- expected = fields.Text(label=__("Expected Results"), multiline=True, size=(800, 300))
- actual = fields.Text(label=__("Actual Results"), multiline=True, size=(800, 300))
+ steps = fields.Text(label=__("Steps to Reproduce"), multiline=True, size=(400, 100))
+ expected = fields.Text(label=__("Expected Results"), multiline=True, size=(400, 100))
+ actual = fields.Text(label=__("Actual Results"), multiline=True, size=(400, 100))
  buttons = fields.ButtonSizer(ok=True, cancel=True)
 
  def get_report(self):
