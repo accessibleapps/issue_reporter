@@ -6,10 +6,11 @@ import sysinfo
 
 class Report(object):
 
- def __init__(self, system_info=None, email=None, summary=None, frequency=None, steps=None, expected_results=None, actual_results=None, log_paths=None):
+ def __init__(self, system_info=None, application_name=None, email=None, summary=None, frequency=None, steps=None, expected_results=None, actual_results=None, log_paths=None):
   if system_info is None:
    system_info = sysinfo.system_info()
   self.system_info = system_info
+  self.application_name = application_name
   self.email = email
   self.summary = summary
   self.frequency = frequency
@@ -41,7 +42,7 @@ Actual Results:
   self.mailgun_api = mailgun_api.MailgunAPI(mailgun_api_key, domain)
 
  def send_report(self, report, **kwargs):
-  subject = report.summary
+  subject = report.application_name + ': ' + report.summary
   message = self.message_template.format(report=report)
   sysinfo = StringIO()
   json.dump(report.system_info, sysinfo, indent=2)
