@@ -4,13 +4,12 @@
 # project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: issue_reporter VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-03-23 21:15-0600\n"
-"PO-Revision-Date: 2014-03-23 18:43-0600\n"
+"POT-Creation-Date: 2014-03-24 15:38-0600\n"
+"PO-Revision-Date: 2014-03-24 15:54+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: tr_TR <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0\n"
@@ -21,41 +20,41 @@ msgstr ""
 
 #: gui.py:7
 msgid "Your &Email Address"
-msgstr ""
+msgstr "&Email adresiniz"
 
 #: gui.py:8
 msgid "Summary"
-msgstr ""
+msgstr "Özet"
 
 #: gui.py:9
 msgid "How frequently does the Issue occur?"
-msgstr ""
+msgstr "Ne sıklıkla bu sorunla karşılaşıyorsunuz?"
 
 #: gui.py:9
 msgid "Rarely"
-msgstr ""
+msgstr "Nadiren"
 
 #: gui.py:9
 msgid "Sometimes"
-msgstr ""
+msgstr "Bazen"
 
 #: gui.py:9
 msgid "Frequently"
-msgstr ""
+msgstr "Sıklıkla"
 
 #: gui.py:9
 msgid "Always"
-msgstr ""
+msgstr "Sürekli"
 
 #: gui.py:10
 msgid "Steps to Reproduce"
-msgstr ""
+msgstr "Sorun çözme adımları"
 
 #: gui.py:11
 msgid "Expected Results"
-msgstr ""
+msgstr "Olası sonuçlar"
 
 #: gui.py:12
 msgid "Actual Results"
-msgstr ""
+msgstr "Gerçek sonuçlar"
 
