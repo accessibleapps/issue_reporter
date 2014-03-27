@@ -51,6 +51,7 @@ Actual Results:
   files = [('attachment', sysinfo)]
   for path in report.log_paths:
    files.append(('attachment', open(path, 'rb')))
+  kwargs['h:Reply-To'] = "<"+report.email+">"
   self.mailgun_api.send_message(self.from_address, self.to_address, subject=subject, text=message, files=files, **kwargs)
   for f in files:
    f[1].close()
