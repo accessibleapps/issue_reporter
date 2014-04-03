@@ -6,11 +6,12 @@ import sysinfo
 
 class Report(object):
 
- def __init__(self, system_info=None, application_name=None, email=None, summary=None, frequency=None, steps=None, expected_results=None, actual_results=None, log_paths=None):
+ def __init__(self, system_info=None, application_name=None, application_version=None, email=None, summary=None, frequency=None, steps=None, expected_results=None, actual_results=None, log_paths=None):
   if system_info is None:
    system_info = sysinfo.system_info()
   self.system_info = system_info
   self.application_name = application_name
+  self.application_version = application_version
   self.email = email
   self.summary = summary
   self.frequency = frequency
@@ -23,6 +24,7 @@ class Report(object):
 
 class IssueReporter(object):
  message_template = """Reporter: {report.email}
+Version: {report.application_version}
 Frequency: {report.frequency}
 Steps to reproduce:
 {report.steps}
