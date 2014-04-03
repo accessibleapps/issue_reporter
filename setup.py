@@ -5,5 +5,8 @@ setup(
  version = 0.1,
  description = """Simple interface for quickly reporting issues with a GUI and Mailgun out the back""",
  packages = find_packages(),
+ package_data={'issue_reporter': [
+  'locale/*/*/*',
+ ]},
  install_requires = ['sysinfo', 'mailgun_api'],
 )
