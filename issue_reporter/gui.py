@@ -3,6 +3,10 @@ from . import issue_reporter
 from wx_utils import forms as wx_forms
 from gui_builder import fields, forms
 
+import sys
+import i18n_core
+i18n_core.install_module_translation('issue_reporter', module=sys.modules['issue_reporter.gui'])
+
 class IssueReporterDialog(wx_forms.AutoSizedDialog):
  email = fields.Text(label=__("Your &Email Address"), size=(200, 20))
  summary = fields.Text(label=__("Summary"), size=(400, 20))
