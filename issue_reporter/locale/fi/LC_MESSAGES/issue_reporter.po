@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: issue_reporter VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-03-24 16:10-0600\n"
+"POT-Creation-Date: 2014-04-06 22:44-0600\n"
 "PO-Revision-Date: 2014-03-24 07:33+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: fi <jani.kinnunen@wippies.fi>\n"
@@ -18,43 +18,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: gui.py:7
+#: gui.py:11
 msgid "Your &Email Address"
 msgstr "&Sähköpostiosoitteesi"
 
-#: gui.py:8
+#: gui.py:12
 msgid "Summary"
 msgstr "Yhteenveto"
 
-#: gui.py:9
+#: gui.py:13
 msgid "How frequently does the Issue occur?"
 msgstr "Kuinka säännöllisesti ongelma ilmenee?"
 
-#: gui.py:9
+#: gui.py:13
 msgid "Rarely"
 msgstr "Harvoin"
 
-#: gui.py:9
+#: gui.py:13
 msgid "Sometimes"
 msgstr "Joskus"
 
-#: gui.py:9
+#: gui.py:13
 msgid "Frequently"
 msgstr "Säännöllisesti"
 
-#: gui.py:9
+#: gui.py:13
 msgid "Always"
 msgstr "Aina"
 
-#: gui.py:10
+#: gui.py:14
 msgid "Steps to Reproduce"
 msgstr "Vaiheet, joilla ongelma toistetaan"
 
-#: gui.py:11
+#: gui.py:15
 msgid "Expected Results"
 msgstr "Odotetut tulokset"
 
-#: gui.py:12
+#: gui.py:16
 msgid "Actual Results"
 msgstr "Todelliset tulokset"
 
