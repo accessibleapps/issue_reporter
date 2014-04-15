@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: issue_reporter VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-04-08 15:53-0600\n"
-"PO-Revision-Date: 2014-03-24 07:33+0200\n"
+"POT-Creation-Date: 2014-04-14 17:59-0600\n"
+"PO-Revision-Date: 2014-04-11 08:11+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: fi <jani.kinnunen@wippies.fi>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -28,7 +28,7 @@ msgstr "Yhteenveto"
 
 #: gui.py:13
 msgid "How frequently does the Issue occur?"
-msgstr "Kuinka säännöllisesti ongelma ilmenee?"
+msgstr "Kuinka usein ongelma ilmenee?"
 
 #: gui.py:13
 msgid "Rarely"
@@ -40,7 +40,7 @@ msgstr "Joskus"
 
 #: gui.py:13
 msgid "Frequently"
-msgstr "Säännöllisesti"
+msgstr "Usein"
 
 #: gui.py:13
 msgid "Always"
