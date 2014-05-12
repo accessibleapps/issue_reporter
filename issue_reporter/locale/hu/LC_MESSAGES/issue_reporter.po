@@ -1,4 +1,4 @@
-# Turkish (Turkey) translations for issue_reporter.
+# Hungarian translations for issue_reporter.
 # Copyright (C) 2014 Christopher Toth
 # This file is distributed under the same license as the issue_reporter
 # project.
@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: issue_reporter VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-05-12 13:09-0600\n"
-"PO-Revision-Date: 2014-04-08 10:24+0200\n"
-"Last-Translator: Salih Kunduz <salihk55@gmail.com>\n"
-"Language-Team: tr_TR <LL@li.org>\n"
+"PO-Revision-Date: 2014-04-11 13:17+0100\n"
+"Last-Translator: Erion <rob.mail@freemail.hu>\n"
+"Language-Team: hu <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,41 +20,41 @@ msgstr ""
 
 #: gui.py:11
 msgid "Your &Email Address"
-msgstr "&Email adresiniz"
+msgstr "Az ön &Email címe"
 
 #: gui.py:12
 msgid "Summary"
-msgstr "Özet"
+msgstr "Összegzés"
 
 #: gui.py:13
 msgid "How frequently does the Issue occur?"
-msgstr "Ne sıklıkta bu sorunla karşılaşıyorsunuz?"
+msgstr "Milyen gyakra lép fel a hiba?"
 
 #: gui.py:13
 msgid "Rarely"
-msgstr "Nadiren"
+msgstr "Ritkán"
 
 #: gui.py:13
 msgid "Sometimes"
-msgstr "Bazen"
+msgstr "Néha"
 
 #: gui.py:13
 msgid "Frequently"
-msgstr "Sıklıkla"
+msgstr "Gyakran"
 
 #: gui.py:13
 msgid "Always"
-msgstr "Sürekli"
+msgstr "Mindig"
 
 #: gui.py:14
 msgid "Steps to Reproduce"
-msgstr "Sorun çözme adımları"
+msgstr "A hiba kiváltásának lépései"
 
 #: gui.py:15
 msgid "Expected Results"
-msgstr "Beklediğiniz sonuçlar"
+msgstr "Elvárt Eredmény"
 
 #: gui.py:16
 msgid "Actual Results"
-msgstr "Aldığınız sonuçlar"
+msgstr "Tapasztalt Eredmény"
 

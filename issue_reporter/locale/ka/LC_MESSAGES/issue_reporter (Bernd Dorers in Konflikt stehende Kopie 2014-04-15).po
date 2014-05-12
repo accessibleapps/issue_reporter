@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: issue_reporter VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-05-12 13:09-0600\n"
-"PO-Revision-Date: 2014-04-21 21:10+0200\n"
-"Last-Translator: Crystal <crystal@e-mail.ua>\n"
-"Language-Team: ru <LL@li.org>\n"
+"POT-Creation-Date: 2014-04-08 15:53-0600\n"
+"PO-Revision-Date: 2014-03-23 18:16-0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ka <beqaprogger@gmail.com>\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
@@ -21,43 +21,41 @@ msgstr ""
 
 #: gui.py:11
 msgid "Your &Email Address"
-msgstr "Ваш Адрес &Электронной Почты"
+msgstr "თქვენი &ელექტრონული ფოსტის მისამართი"
 
 #: gui.py:12
 msgid "Summary"
-msgstr "Вкратце Опишите Суть Проблемы"
+msgstr "მოკლე აღწერა"
 
 #: gui.py:13
 msgid "How frequently does the Issue occur?"
-msgstr "Как часто это происходит?"
+msgstr "რასიხშირით იჩენს თავს პრობლემა?"
 
 #: gui.py:13
 msgid "Rarely"
-msgstr "Редко"
+msgstr "იშვიათად"
 
 #: gui.py:13
 msgid "Sometimes"
-msgstr "Иногда"
+msgstr "ზოგჯერ"
 
 #: gui.py:13
 msgid "Frequently"
-msgstr "Часто"
+msgstr "ხშირად"
 
 #: gui.py:13
 msgid "Always"
-msgstr "Всегда"
+msgstr "ყოველთვის"
 
 #: gui.py:14
 msgid "Steps to Reproduce"
-msgstr ""
-"Если можете, укажите точные шаги как воспроизвести ошибку. Если нет, то, "
-"что вы сделали и то, что произошло."
+msgstr "ნაბიჯები ამ პრობლემის აღსაწერად"
 
 #: gui.py:15
 msgid "Expected Results"
-msgstr "Ожидаемые Результаты"
+msgstr "მოსალოდნელი შედეგები"
 
 #: gui.py:16
 msgid "Actual Results"
-msgstr "Фактические Результаты"
+msgstr "ნამდვილი შედეგები"
 

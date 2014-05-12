@@ -1,4 +1,4 @@
-# Turkish (Turkey) translations for issue_reporter.
+# Polish translations for issue_reporter.
 # Copyright (C) 2014 Christopher Toth
 # This file is distributed under the same license as the issue_reporter
 # project.
@@ -8,11 +8,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: issue_reporter VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-05-12 13:09-0600\n"
-"PO-Revision-Date: 2014-04-08 10:24+0200\n"
-"Last-Translator: Salih Kunduz <salihk55@gmail.com>\n"
-"Language-Team: tr_TR <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"POT-Creation-Date: 2014-04-08 15:53-0600\n"
+"PO-Revision-Date: 2014-03-24 23:37+0100\n"
+"Last-Translator: Roman Roczen <romek@ece.com.pl>\n"
+"Language-Team: pl <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,41 +21,41 @@ msgstr ""
 
 #: gui.py:11
 msgid "Your &Email Address"
-msgstr "&Email adresiniz"
+msgstr "Adres e-mail"
 
 #: gui.py:12
 msgid "Summary"
-msgstr "Özet"
+msgstr "Podsumowanie"
 
 #: gui.py:13
 msgid "How frequently does the Issue occur?"
-msgstr "Ne sıklıkta bu sorunla karşılaşıyorsunuz?"
+msgstr "Jak często występuje ten problem?"
 
 #: gui.py:13
 msgid "Rarely"
-msgstr "Nadiren"
+msgstr "Rzadko"
 
 #: gui.py:13
 msgid "Sometimes"
-msgstr "Bazen"
+msgstr "Czasami"
 
 #: gui.py:13
 msgid "Frequently"
-msgstr "Sıklıkla"
+msgstr "Często"
 
 #: gui.py:13
 msgid "Always"
-msgstr "Sürekli"
+msgstr "Zawsze"
 
 #: gui.py:14
 msgid "Steps to Reproduce"
-msgstr "Sorun çözme adımları"
+msgstr "Kroki do odtworzenia"
 
 #: gui.py:15
 msgid "Expected Results"
-msgstr "Beklediğiniz sonuçlar"
+msgstr "Oczekiwane wyniki"
 
 #: gui.py:16
 msgid "Actual Results"
-msgstr "Aldığınız sonuçlar"
+msgstr "Stan obecny"
 
