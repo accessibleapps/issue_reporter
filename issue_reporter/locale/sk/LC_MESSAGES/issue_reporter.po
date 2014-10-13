@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: issue_reporter VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-06-02 01:34-0600\n"
+"POT-Creation-Date: 2014-10-13 15:22-0600\n"
 "PO-Revision-Date: 2014-04-01 11:49+0100\n"
 "Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
 "Language-Team: sk <ondrej.rosik@gmail.com>\n"
@@ -27,35 +27,35 @@ msgstr "Vaša &E-mailová adresa"
 msgid "Summary"
 msgstr "Súhrn (anglicky)"
 
-#: gui.py:13
+#: gui.py:14
 msgid "How frequently does the Issue occur?"
 msgstr "Ako často sa to stáva?"
 
-#: gui.py:13
+#: gui.py:14
 msgid "Rarely"
 msgstr "Málokedy"
 
-#: gui.py:13
+#: gui.py:14
 msgid "Sometimes"
 msgstr "Niekedy"
 
-#: gui.py:13
+#: gui.py:14
 msgid "Frequently"
 msgstr "Často"
 
-#: gui.py:13
+#: gui.py:14
 msgid "Always"
 msgstr "Vždy"
 
-#: gui.py:14
+#: gui.py:15
 msgid "Steps to Reproduce"
 msgstr "Podrobný popis problému (anglicky)"
 
-#: gui.py:15
+#: gui.py:16
 msgid "Expected Results"
 msgstr "očakávaný výsledok (anglicky)"
 
-#: gui.py:16
+#: gui.py:17
 msgid "Actual Results"
 msgstr "Aktuálny výsledok (anglicky)"
 

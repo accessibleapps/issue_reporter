@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: issue_reporter VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-06-02 01:34-0600\n"
+"POT-Creation-Date: 2014-10-13 15:22-0600\n"
 "PO-Revision-Date: 2014-04-21 21:10+0200\n"
 "Last-Translator: Crystal <crystal@e-mail.ua>\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -27,37 +27,37 @@ msgstr "Ваш Адрес &Электронной Почты"
 msgid "Summary"
 msgstr "Вкратце Опишите Суть Проблемы"
 
-#: gui.py:13
+#: gui.py:14
 msgid "How frequently does the Issue occur?"
 msgstr "Как часто это происходит?"
 
-#: gui.py:13
+#: gui.py:14
 msgid "Rarely"
 msgstr "Редко"
 
-#: gui.py:13
+#: gui.py:14
 msgid "Sometimes"
 msgstr "Иногда"
 
-#: gui.py:13
+#: gui.py:14
 msgid "Frequently"
 msgstr "Часто"
 
-#: gui.py:13
+#: gui.py:14
 msgid "Always"
 msgstr "Всегда"
 
-#: gui.py:14
+#: gui.py:15
 msgid "Steps to Reproduce"
 msgstr ""
 "Если можете, укажите точные шаги как воспроизвести ошибку. Если нет, то, "
 "что вы сделали и то, что произошло."
 
-#: gui.py:15
+#: gui.py:16
 msgid "Expected Results"
 msgstr "Ожидаемые Результаты"
 
-#: gui.py:16
+#: gui.py:17
 msgid "Actual Results"
 msgstr "Фактические Результаты"
 
