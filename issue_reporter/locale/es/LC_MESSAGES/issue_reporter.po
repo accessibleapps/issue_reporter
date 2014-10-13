@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: issue_reporter VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-06-02 01:34-0600\n"
+"POT-Creation-Date: 2014-10-13 15:22-0600\n"
 "PO-Revision-Date: 2014-03-23 18:43-0600\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: es <LL@li.org>\n"
@@ -27,35 +27,35 @@ msgstr ""
 msgid "Summary"
 msgstr ""
 
-#: gui.py:13
+#: gui.py:14
 msgid "How frequently does the Issue occur?"
 msgstr ""
 
-#: gui.py:13
+#: gui.py:14
 msgid "Rarely"
 msgstr ""
 
-#: gui.py:13
+#: gui.py:14
 msgid "Sometimes"
 msgstr ""
 
-#: gui.py:13
+#: gui.py:14
 msgid "Frequently"
 msgstr ""
 
-#: gui.py:13
+#: gui.py:14
 msgid "Always"
 msgstr ""
 
-#: gui.py:14
+#: gui.py:15
 msgid "Steps to Reproduce"
 msgstr ""
 
-#: gui.py:15
+#: gui.py:16
 msgid "Expected Results"
 msgstr ""
 
-#: gui.py:16
+#: gui.py:17
 msgid "Actual Results"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: issue_reporter VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-06-02 01:34-0600\n"
+"POT-Creation-Date: 2014-10-13 15:22-0600\n"
 "PO-Revision-Date: 2014-04-11 13:17+0100\n"
 "Last-Translator: Erion <rob.mail@freemail.hu>\n"
 "Language-Team: hu <LL@li.org>\n"
@@ -26,35 +26,35 @@ msgstr "Az ön &Email címe"
 msgid "Summary"
 msgstr "Összegzés"
 
-#: gui.py:13
+#: gui.py:14
 msgid "How frequently does the Issue occur?"
 msgstr "Milyen gyakra lép fel a hiba?"
 
-#: gui.py:13
+#: gui.py:14
 msgid "Rarely"
 msgstr "Ritkán"
 
-#: gui.py:13
+#: gui.py:14
 msgid "Sometimes"
 msgstr "Néha"
 
-#: gui.py:13
+#: gui.py:14
 msgid "Frequently"
 msgstr "Gyakran"
 
-#: gui.py:13
+#: gui.py:14
 msgid "Always"
 msgstr "Mindig"
 
-#: gui.py:14
+#: gui.py:15
 msgid "Steps to Reproduce"
 msgstr "A hiba kiváltásának lépései"
 
-#: gui.py:15
+#: gui.py:16
 msgid "Expected Results"
 msgstr "Elvárt Eredmény"
 
-#: gui.py:16
+#: gui.py:17
 msgid "Actual Results"
 msgstr "Tapasztalt Eredmény"
 
