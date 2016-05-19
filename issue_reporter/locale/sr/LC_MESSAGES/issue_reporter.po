@@ -1,0 +1,62 @@
+# Serbian translations for issue_reporter.
+# Copyright (C) 2016 Christopher Toth
+# This file is distributed under the same license as the issue_reporter
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: issue_reporter VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-05-19 14:05-0600\n"
+"PO-Revision-Date: 2016-01-21 15:23+0100\n"
+"Last-Translator: Aleksandar Đurić <agasoft@gmail.com>\n"
+"Language: sr\n"
+"Language-Team: @SokOdTreshnje <agasoft@gmail.com>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: gui.py:11
+msgid "Your &Email Address"
+msgstr "Vaša Email adresa"
+
+#: gui.py:12
+msgid "Summary"
+msgstr "Kratak opis:"
+
+#: gui.py:14
+msgid "How frequently does the Issue occur?"
+msgstr "Koliko se često problem dešava?"
+
+#: gui.py:14
+msgid "Rarely"
+msgstr "Retko"
+
+#: gui.py:14
+msgid "Sometimes"
+msgstr "Ponekad"
+
+#: gui.py:14
+msgid "Frequently"
+msgstr "Često"
+
+#: gui.py:14
+msgid "Always"
+msgstr "Uvek"
+
+#: gui.py:15
+msgid "Steps to Reproduce"
+msgstr "Koraci za ponovno izazivanje problema"
+
+#: gui.py:16
+msgid "Expected Results"
+msgstr "Očekivani rezultati"
+
+#: gui.py:17
+msgid "Actual Results"
+msgstr "Trenutni rezultati"
+

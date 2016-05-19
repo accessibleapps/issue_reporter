@@ -1,0 +1,61 @@
+# Arabic translations for issue_reporter.
+# Copyright (C) 2016 Christopher Toth
+# This file is distributed under the same license as the issue_reporter
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: issue_reporter VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-05-19 14:05-0600\n"
+"PO-Revision-Date: 2016-01-14 01:44+0300\n"
+"Last-Translator: Jacques van Schalkwyk. <jakalas1@hotmail.com>\n"
+"Language: ar\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: gui.py:11
+msgid "Your &Email Address"
+msgstr "&بريدك الإلكتروني"
+
+#: gui.py:12
+msgid "Summary"
+msgstr "ملخص"
+
+#: gui.py:14
+msgid "How frequently does the Issue occur?"
+msgstr "ما مدى احتمالية تكرار حدوث تلك المشكلة؟"
+
+#: gui.py:14
+msgid "Rarely"
+msgstr "نادرا"
+
+#: gui.py:14
+msgid "Sometimes"
+msgstr "أحيانا"
+
+#: gui.py:14
+msgid "Frequently"
+msgstr "كثيرا"
+
+#: gui.py:14
+msgid "Always"
+msgstr "دائما"
+
+#: gui.py:15
+msgid "Steps to Reproduce"
+msgstr "خطوات إعادة إنشاء هذه المشكلة"
+
+#: gui.py:16
+msgid "Expected Results"
+msgstr "النتائج المتوقعة"
+
+#: gui.py:17
+msgid "Actual Results"
+msgstr "النتائج الحاصلة"
+

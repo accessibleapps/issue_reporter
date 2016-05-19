@@ -1,14 +1,14 @@
 # Turkish (Turkey) translations for issue_reporter.
-# Copyright (C) 2014 Christopher Toth
+# Copyright (C) 2016 Christopher Toth
 # This file is distributed under the same license as the issue_reporter
 # project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: issue_reporter VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-01-13 14:17-0700\n"
+"POT-Creation-Date: 2016-05-19 14:05-0600\n"
 "PO-Revision-Date: 2014-04-08 10:24+0200\n"
 "Last-Translator: Salih Kunduz <salihk55@gmail.com>\n"
 "Language: tr_TR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.1.1\n"
+"Generated-By: Babel 2.2.0\n"
 
 #: gui.py:11
 msgid "Your &Email Address"
