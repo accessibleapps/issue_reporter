@@ -8,5 +8,6 @@ setup(
  package_data={'issue_reporter': [
   'locale/*/*/*',
  ]},
+ zip_safe = False,
  install_requires = ['sysinfo', 'mailgun_api'],
 )
