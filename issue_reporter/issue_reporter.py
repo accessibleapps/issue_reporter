@@ -1,5 +1,5 @@
 import json
-from StringIO import StringIO #not cStringIO so we can set its name
+from io import BytesIO
 import mailgun_api
 import sysinfo
 
@@ -46,7 +46,7 @@ Actual Results:
  def send_report(self, report, **kwargs):
   subject = report.application_name + u': ' + report.summary
   message = self.message_template.format(report=report)
-  sysinfo = StringIO()
+  sysinfo = BytesIO()
   json.dump(report.system_info, sysinfo, indent=2)
   sysinfo.seek(0)
   sysinfo.name = 'sysinfo.json'
