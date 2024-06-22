@@ -63,8 +63,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for the full license text.
 
 ## Support
 
 If you encounter any problems or have any questions, please open an issue on the GitHub repository.
+
+---
+
+Copyright (c) 2023 Christopher Toth
