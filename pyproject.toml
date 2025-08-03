@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "issue_reporter"
-version = "0.1.1"
+version = "0.1.2"
 description = "Simple interface for quickly reporting issues with a GUI and Mailgun out the back"
 authors = [
     {name = "Christopher Toth"}
