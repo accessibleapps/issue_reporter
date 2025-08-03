@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "issue_reporter"
+version = "0.1.1"
+description = "Simple interface for quickly reporting issues with a GUI and Mailgun out the back"
+authors = [
+    {name = "Christopher Toth"}
+]
+license = "MIT"
+requires-python = ">=3.6"
+dependencies = [
+    "sysinfo @ git+https://github.com/AccessibleApps/sysinfo.git",
+    "mailgun_api @ git+https://github.com/AccessibleApps/mailgun_api.git",
+]
+
+[project.urls]
+Homepage = "https://github.com/AccessibleApps/issue_reporter"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["issue_reporter*"]
+
+[tool.setuptools.package-data]
+issue_reporter = ["locale/*/*/*"]
