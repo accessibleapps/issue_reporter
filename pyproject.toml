@@ -9,7 +9,7 @@ description = "Simple interface for quickly reporting issues with a GUI and Mail
 authors = [
     {name = "Christopher Toth"}
 ]
-license = "MIT"
+license = {text = "MIT"}
 requires-python = ">=3.6"
 dependencies = [
     "sysinfo @ git+https://github.com/AccessibleApps/sysinfo.git",
