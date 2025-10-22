@@ -1,27 +1,82 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "issue_reporter"
 version = "0.1.2"
 description = "Simple interface for quickly reporting issues with a GUI and Mailgun out the back"
 authors = [
-    {name = "Christopher Toth"}
+    {name = "Christopher Toth", email = "q@q-continuum.net"}
 ]
+readme = "README.md"
 license = {text = "MIT"}
-requires-python = ">=3.6"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries",
+]
 dependencies = [
+    "i18n_core>=0.3.9",
     "sysinfo @ git+https://github.com/AccessibleApps/sysinfo.git",
     "mailgun_api @ git+https://github.com/AccessibleApps/mailgun_api.git",
+    "wx_utils @ git+https://github.com/AccessibleApps/wx_utils.git",
+    "gui_builder @ git+https://github.com/AccessibleApps/gui_builder.git",
 ]
 
 [project.urls]
 Homepage = "https://github.com/AccessibleApps/issue_reporter"
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["issue_reporter*"]
+[tool.hatch.metadata]
+allow-direct-references = true
 
-[tool.setuptools.package-data]
-issue_reporter = ["locale/*/*/*"]
+[tool.hatch.build.targets.wheel]
+packages = ["issue_reporter"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"issue_reporter/locale" = "issue_reporter/locale"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.0",
+    "pyright>=1.1.0",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py38"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "N",   # pep8-naming
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+]
+ignore = [
+    "E501",  # line too long (handled by formatter)
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["issue_reporter"]
+
+[tool.pyright]
+include = ["issue_reporter"]
+exclude = ["**/__pycache__", "build"]
+pythonVersion = "3.8"
+typeCheckingMode = "basic"
+reportMissingImports = "warning"
+reportUnknownMemberType = false
+reportUnknownArgumentType = false
+reportUnknownVariableType = false
