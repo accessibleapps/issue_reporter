@@ -79,6 +79,8 @@ known-first-party = ["issue_reporter"]
 [tool.ruff.lint.per-file-ignores]
 # i18n_core installs __ as a builtin via install_module_translation
 "**/gui.py" = ["F821"]
+# __builtins__.pyi defines __ function for type checking (intentional dunder naming)
+"__builtins__.pyi" = ["N807"]
 
 [tool.pyright]
 include = ["issue_reporter"]

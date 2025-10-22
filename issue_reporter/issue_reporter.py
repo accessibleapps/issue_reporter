@@ -1,6 +1,6 @@
 import json
 from io import StringIO
-from typing import Any, Dict, List, Optional, Tuple, Union
+from typing import Any, List, Tuple
 
 import mailgun_api
 import sysinfo
