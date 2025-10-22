@@ -4,7 +4,7 @@ import mailgun_api
 import sysinfo
 
 
-class Report(object):
+class Report:
 
  def __init__(self, system_info=None, application_name=None, application_version=None, email=None, summary=None, frequency=None, steps=None, expected_results=None, actual_results=None, log_paths=None):
   if system_info is None:
@@ -22,8 +22,8 @@ class Report(object):
    log_paths = []
   self.log_paths = log_paths
 
-class IssueReporter(object):
- message_template = u"""Reporter: {report.email}
+class IssueReporter:
+ message_template = """Reporter: {report.email}
 Version: {report.application_version}
 Frequency: {report.frequency}
 Steps to reproduce:
@@ -44,7 +44,7 @@ Actual Results:
   self.mailgun_api = mailgun_api.MailgunAPI(mailgun_api_key, domain)
 
  def send_report(self, report, **kwargs):
-  subject = report.application_name + u': ' + report.summary
+  subject = report.application_name + ': ' + report.summary
   message = self.message_template.format(report=report)
   sysinfo = StringIO()
   json.dump(report.system_info, sysinfo, indent=2)

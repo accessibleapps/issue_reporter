@@ -1,4 +1,3 @@
-from __future__ import absolute_import
 from . import issue_reporter
 from wx_utils import forms as wx_forms
 from gui_builder import fields, forms
