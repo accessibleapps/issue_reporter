@@ -1,3 +1,2 @@
-from __future__ import absolute_import
-
-from .issue_reporter import IssueReporter, Report
+from .issue_reporter import IssueReporter as IssueReporter
+from .issue_reporter import Report as Report
