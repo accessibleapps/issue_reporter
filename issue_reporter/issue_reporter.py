@@ -1,5 +1,6 @@
 import json
 from io import StringIO
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import mailgun_api
 import sysinfo
@@ -55,14 +56,14 @@ Actual Results:
         domain = from_address.split("@")[1]
         self.mailgun_api = mailgun_api.MailgunAPI(mailgun_api_key, domain)
 
-    def send_report(self, report, **kwargs):
+    def send_report(self, report, **kwargs: Any) -> None:
         subject = report.application_name + ": " + report.summary
         message = self.message_template.format(report=report)
         sysinfo = StringIO()
         json.dump(report.system_info, sysinfo, indent=2)
         sysinfo.seek(0)
-        sysinfo.name = "sysinfo.json"
-        files = [("attachment", sysinfo)]
+        sysinfo.name = "sysinfo.json"  # type: ignore[attr-defined]
+        files: List[Tuple[str, Any]] = [("attachment", sysinfo)]
         for path in report.log_paths:
             files.append(("attachment", open(path, "rb")))
         kwargs["h:Reply-To"] = "<" + report.email + ">"

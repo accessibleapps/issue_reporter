@@ -40,10 +40,12 @@ class IssueReporterDialog(wx_forms.AutoSizedDialog):
     buttons = fields.ButtonSizer(ok=True, cancel=True)
 
     def get_report(self):
+        frequency_index = self.frequency.get_index()
+        assert frequency_index is not None, "Frequency selection is required"
         return issue_reporter.Report(
             email=self.email.get_value(),
             summary=self.summary.get_value(),
-            frequency=self.frequencies[self.frequency.get_index()],
+            frequency=self.frequencies[frequency_index],
             steps=self.steps.get_value(),
             expected_results=self.expected.get_value(),
             actual_results=self.actual.get_value(),
