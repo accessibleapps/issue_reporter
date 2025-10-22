@@ -8,13 +8,40 @@ import i18n_core
 i18n_core.install_module_translation('issue_reporter', module=sys.modules['issue_reporter.gui'])
 
 class IssueReporterDialog(wx_forms.AutoSizedDialog):
- email = fields.Text(label=__("Your &Email Address"), size=(200, 20))
- summary = fields.Text(label=__("Summary"), size=(400, 20))
+ email = fields.Text(
+  label=__("Your &Email Address"),
+  min_size=(500, 20),
+  tool_tip_text=__("Your email address for follow-up questions")
+ )
+ summary = fields.Text(
+  label=__("Summary"),
+  min_size=(500, 20),
+  tool_tip_text=__("Brief description of the issue")
+ )
  frequencies = ("Rarely", "Sometimes", "Frequently", "Always")
- frequency = fields.RadioButtonGroup(label=__("How frequently does the Issue occur?"), choices=[__("Rarely"), __("Sometimes"), __("Frequently"), __("Always")])
- steps = fields.Text(label=__("Steps to Reproduce"), multiline=True, size=(400, 100))
- expected = fields.Text(label=__("Expected Results"), multiline=True, size=(400, 100))
- actual = fields.Text(label=__("Actual Results"), multiline=True, size=(400, 100))
+ frequency = fields.RadioButtonGroup(
+  label=__("How frequently does the Issue occur?"),
+  choices=[__("Rarely"), __("Sometimes"), __("Frequently"), __("Always")],
+  tool_tip_text=__("How often you experience this issue")
+ )
+ steps = fields.Text(
+  label=__("Steps to Reproduce"),
+  multiline=True,
+  min_size=(500, 150),
+  tool_tip_text=__("Detailed steps to reproduce the issue")
+ )
+ expected = fields.Text(
+  label=__("Expected Results"),
+  multiline=True,
+  min_size=(500, 150),
+  tool_tip_text=__("What you expected to happen")
+ )
+ actual = fields.Text(
+  label=__("Actual Results"),
+  multiline=True,
+  min_size=(500, 150),
+  tool_tip_text=__("What actually happened")
+ )
  buttons = fields.ButtonSizer(ok=True, cancel=True)
 
  def get_report(self):
