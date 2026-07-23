@@ -61,6 +61,14 @@ Issue Reporter supports internationalization. The GUI automatically uses the app
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+## Development
+
+Build the wheel and source distribution:
+
+```powershell
+uv build
+```
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for the full license text.
