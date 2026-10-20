@@ -1,4 +1,5 @@
 import json
+from contextlib import ExitStack
 from io import StringIO
 from typing import Any, List, Tuple
 
@@ -59,16 +60,15 @@ Actual Results:
     def send_report(self, report, **kwargs: Any) -> None:
         subject = report.application_name + ": " + report.summary
         message = self.message_template.format(report=report)
-        sysinfo = StringIO()
-        json.dump(report.system_info, sysinfo, indent=2)
-        sysinfo.seek(0)
-        sysinfo.name = "sysinfo.json"  # type: ignore[attr-defined]
-        files: List[Tuple[str, Any]] = [("attachment", sysinfo)]
-        for path in report.log_paths:
-            files.append(("attachment", open(path, "rb")))
-        kwargs["h:Reply-To"] = "<" + report.email + ">"
-        self.mailgun_api.send_message(
-            self.from_address, self.to_address, subject=subject, text=message, files=files, **kwargs
-        )
-        for f in files:
-            f[1].close()
+        with ExitStack() as attachments:
+            sysinfo = attachments.enter_context(StringIO())
+            json.dump(report.system_info, sysinfo, indent=2)
+            sysinfo.seek(0)
+            sysinfo.name = "sysinfo.json"  # type: ignore[attr-defined]
+            files: List[Tuple[str, Any]] = [("attachment", sysinfo)]
+            for path in report.log_paths:
+                files.append(("attachment", attachments.enter_context(open(path, "rb"))))
+            kwargs["h:Reply-To"] = "<" + report.email + ">"
+            self.mailgun_api.send_message(
+                self.from_address, self.to_address, subject=subject, text=message, files=files, **kwargs
+            )
