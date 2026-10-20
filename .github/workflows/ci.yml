@@ -1,0 +1,36 @@
+name: Offline tests and build
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test-build:
+    name: Offline tests and package build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
+        with:
+          version: "0.13.4"
+          python-version: "3.13"
+          enable-cache: false
+      - name: Run complete offline suite
+        run: uv run --isolated --no-project --with pytest==9.1.1 pytest -v
+      - name: Build wheel and source distribution
+        run: uv build
+      - name: Require both package artifacts
+        run: |
+          test -s dist/issue_reporter-0.1.2-py3-none-any.whl
+          test -s dist/issue_reporter-0.1.2.tar.gz
