@@ -63,6 +63,23 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Development
 
+Run the complete offline test suite from the repository root:
+
+```powershell
+uv run --isolated --no-project --with pytest==9.1.1 pytest -v
+```
+
+The tests load the real report implementation with mocked Mailgun, system
+information, and log-file boundaries. They use no project dependencies, service
+credentials, service requests, or real system inventory. The former
+live sending smoke test is replaced by assertions for report construction,
+message fields, delivery options, and successful attachment handling. There is
+no live integration test in the default suite.
+
+CI runs the same complete suite and package build on Linux with CPython 3.8
+(pytest 8.3.5) and 3.13 (pytest 9.1.1). When running the command above on Python
+3.8, use `pytest==8.3.5` in place of `pytest==9.1.1`.
+
 Build the wheel and source distribution:
 
 ```powershell
